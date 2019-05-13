@@ -5,8 +5,8 @@ import random
     Código criado para facilitar a organização
     do evento EIGHT da Universidade de Brasília,
     onde cada palestrante tem até 8 minutos, 
-    e a partir do minuto digitado antes do cronometro 
-    começar começa a piscar a tela de 5 em 5 segundos.
+    e a partir do minuto digitado previamente,
+    o cronômetro começa a piscar a tela de 5 em 5 segundos.
 """
 
 SCREEN_WIDTH = 1850
