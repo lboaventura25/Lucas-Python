@@ -143,3 +143,23 @@ def checkio(*args):
         return float(round(maior - menor, 3))
     if type(menor) == int and type(maior) == int:
         return int(maior - menor)
+
+def count_digits(n):
+    """
+    Retorna um dictionary com a frequência de cada digito
+    """
+    aux = []
+    lst = []
+    freq = []
+    num = int(n)
+    while num >= 1:
+        digito = int(num % 10)
+        lst.append(digito)
+        num /= 10
+
+    for key in lst:
+        if key not in aux:
+            freq.append(lst.count(key))
+            aux.append(key)
+
+    return dict(zip(aux, freq))

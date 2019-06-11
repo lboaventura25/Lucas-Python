@@ -1,5 +1,4 @@
-from funcao import is_even, is_odd, sqrt, fibo, is_prime, have_vowel, squared_list
-from funcao import add_of_squared_list, check, popular_words, find_message, checkio
+from funcao import *
 
 def test_is_even():
     assert is_even(2) is True
@@ -74,3 +73,9 @@ def test_checkio():
     assert checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
     assert checkio() == 0
     assert checkio(5, -5.5, 0, 6, 10, 20, 100, 50) == 105.5
+
+def test_count_digits():
+    assert count_digits(52648) == {5: 1, 2: 1, 6: 1, 4: 1, 8: 1}
+    assert count_digits(10000) == {1: 1, 0: 4}
+    assert count_digits(151551) == {5: 3, 1: 3}
+    assert count_digits(9589985) == {5: 2, 9: 3, 8: 2}
