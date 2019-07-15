@@ -1,3 +1,3 @@
 # Códigos em Python para estudo
 
-- Exercícios de treino em Python
+- Programas de treino em Python
